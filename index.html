@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b2a5b">
+<title>COLAFOG – Registro</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="topo">
+  <button class="topo-voltar" id="btnVoltar" aria-label="Voltar" hidden>‹</button>
+  <div class="topo-titulo">
+    <strong id="tituloTela">COLAFOG</strong>
+    <span id="subtituloTela"></span>
+  </div>
+  <button class="sinc" id="btnSinc" title="Sincronizar agora">
+    <span class="sinc-ponto" id="sincPonto"></span>
+    <span id="sincTexto">—</span>
+  </button>
+  <button class="topo-menu" id="btnMenu" aria-label="Menu">☰</button>
+</header>
+
+<nav class="menu" id="menu" hidden>
+  <button data-ir="modalidade">Registrar lançamento</button>
+  <button data-ir="registros">Registros e correções</button>
+  <a href="placar.html" target="_blank" rel="noopener">Abrir placar (telão)</a>
+  <button data-ir="ajustes">Ajustes do tablet</button>
+</nav>
+
+<main id="tela"></main>
+
+<div class="aviso" id="aviso" role="status" hidden></div>
+
+<script src="nucleo.js"></script>
+<script src="regras.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
